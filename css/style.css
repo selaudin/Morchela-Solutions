@@ -504,6 +504,9 @@
 }
 
 .team-img {
+    width: 200px; /* Set a consistent width */
+    height: 200px; /* Set a consistent height */
+    overflow: hidden; /* Hide overflowing parts of the image */
     border: 15px solid var(--bs-white);
 }
 
