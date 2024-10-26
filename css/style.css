@@ -1,4 +1,16 @@
 /*** Spinner Start ***/
+:root {
+    --theme-color: #cea572;
+    --theme-color-darker: #805a2b;
+  }
+
+.theme-primary{
+    color: var(--theme-color);
+}
+
+.theme-border-primary{
+    color: var(--theme-color);
+}
 
 #spinner {
     opacity: 0;
@@ -116,7 +128,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-cyan) !important;
+    color: var(--theme-color-darker) !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -185,13 +197,13 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background: var(--bs-primary);
+    background: var(--theme-color);
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
 
 .carousel-control-prev:hover {
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     transition: .8s;
 }
 
@@ -201,18 +213,18 @@
     position: absolute;
     top: 50%;
     right: 0;
-    background: var(--bs-primary);
+    background: var(--theme-color);
     border-radius: 50px 0 0 50px;
     opacity: 1;
 }
 
 .carousel-control-next:hover {
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     transition: .8s;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     color: var(--bs-dark);
     opacity: 1;
     border: 0;
@@ -220,7 +232,7 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-    background: var(--bs-primary);
+    background: var(--theme-color);
     color: #ffffff;
     border: 0;
     opacity: 1;
@@ -229,7 +241,7 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
-    background: var(--bs-primary);
+    background: var(--theme-color);
     color: var(--bs-white);
     opacity: 1;
     border: 0;
@@ -237,7 +249,7 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2:hover {
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     color: var(--bs-dark);
     border: 0;
     opacity: 1;
@@ -248,14 +260,14 @@
 #carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background: var(--bs-primary);
+    background: var(--theme-color);
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
 }
 
 #carouselId .carousel-indicators li:hover {
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     opacity: 1;
 }
 
@@ -362,7 +374,7 @@
 }
 
 .services-item:hover .services-content-icon i {
-    color: var(--bs-cyan) !important;
+    color: var(--theme-color-darker) !important;
 }
 
 .services-item:hover .services-content-icon p {
@@ -386,7 +398,7 @@
     height: 150px;
     top: 0;
     left: 0;
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -400,7 +412,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background: var(--bs-primary);
+    background: var(--theme-color);
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -422,7 +434,7 @@
 .project-content a {
     display: inline-block;
     padding: 20px 25px;
-    background: var(--bs-primary);
+    background: var(--theme-color);
     border-radius: 10px;
 }
 
@@ -480,7 +492,7 @@
 /*** Team Start ***/
 
 .team-item {
-    border-top: 30px solid var(--bs-cyan) !important;
+    border-top: 30px solid var(--theme-color-darker) !important;
     background: rgba(239, 239, 241, 0.8);
 }
 
@@ -490,7 +502,7 @@
     content: "";
     position: relative;
     top: -101px;
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
     padding: 60px;
     opacity: 1;
@@ -514,18 +526,18 @@
     width: 100%; /* Make sure the image takes up the full width */
     height: 100%; /* Make sure the image takes up the full height */
     object-fit: cover; /* Cover the container while maintaining aspect ratio */
-    border: 10px solid var(--bs-cyan);
+    border: 10px solid var(--theme-color-darker);
     transition: .5s;
 }
 
 .team-item:hover h4 {
-    color: var(--bs-primary);
+    color: var(--theme-color);
     transition: .5s;
 }
 
 .team-item:hover .team-img img {
     transform: scale(1.05);
-    border: 10px solid var(--bs-cyan);
+    border: 10px solid var(--theme-color-darker);
 }
 
 .team-carousel .owl-stage {
@@ -547,7 +559,7 @@
     height: 56px;
     border-radius: 56px;
     margin-left: 15px;
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     color: var(--bs-white);
     display: flex;
     align-items: center;
@@ -557,7 +569,7 @@
 
 .team-carousel .owl-nav .owl-prev:hover,
 .team-carousel .owl-nav .owl-next:hover {
-    background: var(--bs-primary);
+    background: var(--theme-color);
     color: var(--bs-white);
 }
 
@@ -605,7 +617,7 @@
 
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: var(--bs-primary);
+    background: var(--theme-color);
 }
 
 .testimonial-carousel .owl-item.center {
@@ -640,12 +652,12 @@
 }
 
 .contact-map {
-    background-color: var(--bs-cyan) !important;
+    background-color: var(--theme-color-darker) !important;
     color: var(--bs-white) !important;
 }
 
 .contact-form {
-    background-color: var(--bs-cyan) !important;
+    background-color: var(--theme-color-darker) !important;
     color: var(--bs-white) !important;
 }
 
@@ -667,17 +679,21 @@
 }
 
 .footer .hightech-link a:hover {
-    background: var(--bs-cyan);
+    background: var(--theme-color-darker);
     border: 0;
 }
 
 /*** Footer End ***/
 
 .theme{
-    background-color: var(--bs-cyan) !important;
+    background-color: var(--theme-color-darker) !important;
     color: var(--bs-white) !important;
 }
 
 .text-theme{
-    color: var(--bs-cyan) !important;
+    color: var(--theme-color-darker) !important;
+}
+
+.bg-color{
+    background-color: #cea572 !important
 }
